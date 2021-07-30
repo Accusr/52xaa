@@ -1,0 +1,11 @@
+.time{
+  font: 12px PingFangSC-Regular;
+  &>span{
+    margin: 0 4px;
+    background: pink;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: white;
+    font:24px PingFangSC-Medium;
+  }
+}

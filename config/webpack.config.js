@@ -129,6 +129,24 @@ module.exports = function (webpackEnv) {
               },
               stage: 3,
             }),
+              // options: https://github.com/evrone/postcss-px-to-viewport/blob/9d6c5cee5eea367fb4c7cf0c3bb1117979b5fbf4/README.md
+              require('postcss-px-to-viewport')({
+              unitToConvert: 'px',
+              viewportWidth: 750,
+              unitPrecision: 5,
+              propList: ['*'],
+              viewportUnit: 'vw',
+              fontViewportUnit: 'vw',
+              selectorBlackList: [],
+              minPixelValue: 1,
+              mediaQuery: false,
+              replace: true,
+              exclude: undefined,
+              include: undefined,
+              landscape: false,
+              landscapeUnit: 'vw',
+              landscapeWidth: 568
+              }),
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
             // which in turn let's users customize the target behavior as per their needs.

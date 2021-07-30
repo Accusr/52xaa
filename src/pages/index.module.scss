@@ -1,0 +1,29 @@
+.home{
+  width: 750px;
+  min-height: 100vh;
+  position: relative;
+  border: 1px solid red;
+  .banner{
+    .wp{
+      width: 750px;
+      height: 750px;
+      border: 1px solid red;
+    }
+  }
+  .time{
+    text-align: center;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font: 10px PingFangSC-Regular;
+    width: 750px;
+  }
+}
+
+.wp{
+  width: 720px;
+  height: 750px;
+  border: 1px solid green;
+}
